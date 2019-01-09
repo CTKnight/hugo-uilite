@@ -3,7 +3,6 @@
 }
 
 html{
-  overflow-x: hidden;
   overflow-y: scroll; 
 }
 
@@ -17,7 +16,7 @@ a{
   left: 0px;
   top: 0px;
   
-  right: 552px;
+  // right: 552px;
   bottom: 0px;
   z-index: 1;
   width: 40%;
@@ -34,8 +33,6 @@ a{
       transform: translateX(0);
       opacity: 1;
     }
-
-
   }
 }
 
@@ -48,24 +45,15 @@ a{
   float: none;
   clear: none;
 
-  &:after{
-    position: absolute;
-    content: '';
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-    transition: all 0.8s cubic-bezier(0.79, 0, 0.05, 0.83);;
-    background-color: #fff;
-  }
+  // &:after{
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateX(-40px);
+  // }
 
   &.active{
-    &:after{
-      position: absolute;
-      content: '';
-      top: 0; bottom: 0;
-      left: 0; right: 0;
-      transform: translateX(100%);
-      background-color: #fff;
-    }
+      transform: translateX(0);
+      opacity: 1;
   }
 }
 
@@ -234,7 +222,7 @@ section{
   }
 
   &.skin{
-    background-color: #fdead2;
+    background-color: #ffe391;
   }
 
   &.aqua{

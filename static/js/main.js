@@ -22,11 +22,11 @@
 
 $(document).ready(function () {
   var elements = $(".sidebar > .main-info *");
-
+  var initTime = 100;
   var _loop = function _loop(i) {
     setTimeout(function () {
       $(elements[i].tagName).addClass("bs");
-    }, 400 * i - 90 * i);
+    }, 50 * i + initTime);
   };
 
   for (var i = 0; i < elements.length; i++) {
@@ -35,5 +35,5 @@ $(document).ready(function () {
 
   setTimeout(function () {
     $(".main-content").addClass("active");
-  }, 1000);
+  }, 500);
 });
