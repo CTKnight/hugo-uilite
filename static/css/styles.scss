@@ -278,7 +278,7 @@ section{
     width: 3px;
     height: 100%;
     background: #000;
-    left: 50%;
+    left: 5%;
     transform: translate(-50%);
     top: 0;
     position: absolute;
@@ -291,7 +291,7 @@ section{
   }
 
   .timeline-item {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     position: relative;
     text-align: right;
 
@@ -301,7 +301,7 @@ section{
       height: 20px;
       position: absolute;
       top: 0;
-      left: 50%;
+      left: 5%;
       overflow: hidden;
       margin-left: -10px;
       -webkit-border-radius: 50%;
@@ -311,14 +311,19 @@ section{
     }
 
     .timeline-content {
-      width: 45%;
+      width: 90%;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
       transition: all 0.3s ease;
+      padding-left: 30px;
 
       p {
         color: rgba(0,0,0,0.7);
+      }
+
+      ul {
+        padding-left: 0px;
       }
 
       .date{

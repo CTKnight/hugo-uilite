@@ -7,10 +7,13 @@
     <div class="timeline-item clearfix">
       <div class="timeline-icon"></div>
       
-      <div class="timeline-content {{ if eq (mod $index 2) 0 }} right {{ end }}">
+      <div class="timeline-content right">
         <span class="date">{{ $element.timeperiod }}</span>
-        <h6 class="h3 my-2">{{ $element.company }}</h6>
-        <p class="">{{ $element.description }}</p>
+        <h6 class="h6 my-2">{{ $element.company }}</h6>
+        <p class="h6">{{ $element.description }}</p>
+        {{ range $index, $responsility := $element.responsibilies }}
+          <ul>{{ $responsility | markdownify }}</ul>
+        {{ end }}
       </div>
     </div>
     {{ end }}
