@@ -13,43 +13,27 @@
 *
 */
 
+/**
+ * Jiewen Lai (2018) All rights reserved.
+ * remove the unused code and tranpiled by babel
+ */
 
-let menuBtn = $("#menuBar");
+"use strict";
 
-menuBtn.click(function(){
-
-  $('.hamburger-menu').toggleClass('animate');
-
-  if($(".secondaryMenu").hasClass("active")){
-    
-    $(".secondaryMenu").removeClass("active");
-    setTimeout(function(){
-      $(".primaryMenu").addClass("active");
-    },400);
-
-    
-  } else {
-    $(".primaryMenu").removeClass("active");
-  
-    setTimeout(function(){
-      $(".secondaryMenu").addClass("active");
-    },350);
-  }
-});
-
-$(document).ready(function(){
+$(document).ready(function () {
   var elements = $(".sidebar > .main-info *");
 
-  console.log(elements);
-
-  for(let i = 0; i < elements.length; i++){
-    setTimeout(function(){
+  var _loop = function _loop(i) {
+    setTimeout(function () {
       $(elements[i].tagName).addClass("bs");
-    }, (400 * i) - 90 * i );
+    }, 400 * i - 90 * i);
+  };
+
+  for (var i = 0; i < elements.length; i++) {
+    _loop(i);
   }
 
-  setTimeout(function(){
+  setTimeout(function () {
     $(".main-content").addClass("active");
-  }, 1900);
-
+  }, 1000);
 });
