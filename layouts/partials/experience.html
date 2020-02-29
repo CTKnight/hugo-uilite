@@ -1,6 +1,7 @@
-{{ $experience := .Site.Data.experience }}
+{{ $experience := .Scratch.Get "exp" }}
+{{ $bg := default "skin" (.Scratch.Get "bg") }}
 
-<section id="experience" class="skin">
+<section class={{$bg}}>
   <h2 class="heading">{{ $experience.title }}</h2>
   <div id="timeline">
     {{ range $index, $element := $experience.experience }}
@@ -8,12 +9,16 @@
       <div class="timeline-icon"></div>
       
       <div class="timeline-content right">
-        <span class="date">{{ $element.timeperiod }}</span>
-        <h6 class="h6 my-2">{{ $element.company }}</h6>
-        <p class="h6">{{ $element.description }}</p>
-        {{ range $index, $responsility := $element.responsibilies }}
-          <ul>{{ $responsility | markdownify }}</ul>
+        <h6 class="h6 my-2">{{ $element.item_title }}</h6>
+        {{ if $element.timeperiod }}
+          <p><i>{{$element.timeperiod}}</i></p>
         {{ end }}
+        <p class="h6">{{ $element.item_subtitle }}</p>
+        <ul>
+          {{ range $index, $desc := $element.item_descriptions }}
+            <li>{{ $desc | markdownify }}</li>
+          {{ end }}
+        </ul>
       </div>
     </div>
     {{ end }}
