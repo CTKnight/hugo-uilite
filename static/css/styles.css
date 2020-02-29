@@ -164,7 +164,7 @@ section.yellow .progress .bg-blue {
   background-color: #c19c43;
 }
 section.voilet {
-  background-color: #a8b6f3;
+  background-color: #9fa8da;
 }
 section.blue {
   background-color: #90caf9;
@@ -174,6 +174,9 @@ section.orange {
 }
 section.green {
   background-color: #a5d6a7;
+}
+section.lime {
+  background-color: #e6ee9c;
 }
 section.amber {
   background-color: #ffe082;
