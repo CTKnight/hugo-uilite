@@ -157,7 +157,7 @@ section .heading {
   margin-bottom: 30px;
 }
 section.yellow {
-  background-color: #ffd061;
+  background-color: #fff59d;
   color: #000 !important;
 }
 section.yellow .progress .bg-blue {
@@ -167,24 +167,23 @@ section.voilet {
   background-color: #a8b6f3;
 }
 section.blue {
-  background-color: #cadfdf;
+  background-color: #90caf9;
 }
 section.orange {
-  color: #fff;
-  background-color: #fb7833;
+  background-color: #ffcc80;
 }
 section.green {
-  background-color: #aaffa7;
+  background-color: #a5d6a7;
 }
-section.skin {
-  background-color: #ffe391;
+section.amber {
+  background-color: #ffe082;
 }
-section.aqua {
-  background-color: #00fefe;
+section.cyan {
+  background-color: #80deea;
   color: #000 !important;
 }
 section.pink {
-  background-color: #fff1f1;
+  background-color: #f48fb1;
 }
 
 .progress {

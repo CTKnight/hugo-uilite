@@ -1,5 +1,5 @@
 {{ $experience := .Scratch.Get "exp" }}
-{{ $bg := default "skin" (.Scratch.Get "bg") }}
+{{ $bg := default "amber" (.Scratch.Get "bg") }}
 
 <section class={{$bg}}>
   <h2 class="heading">{{ $experience.title }}</h2>
