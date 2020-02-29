@@ -44,7 +44,7 @@ a:hover {
 
 .not_found {
   height: 100%;
-  position: fixed;
+  width: 100%;
 }
 
 article {
