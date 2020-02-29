@@ -4,7 +4,7 @@
 <div class="main-content">
 	{{ if .Site.Data.education }}
 		{{ .Scratch.Set "exp" .Site.Data.education }}
-		{{ .Scratch.Set "bg" "orange" }}
+		{{ .Scratch.Set "bg" "skin" }}
 		{{ partial "experience.html" . }}
 	{{ end }}
 	{{ if .Site.Data.experience }}

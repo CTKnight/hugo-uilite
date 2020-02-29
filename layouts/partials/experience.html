@@ -9,11 +9,9 @@
       <div class="timeline-icon"></div>
       
       <div class="timeline-content right">
-        <h6 class="h6 my-2">{{ $element.item_title }}</h6>
-        {{ if $element.timeperiod }}
-          <p><i>{{$element.timeperiod}}</i></p>
-        {{ end }}
-        <p class="h6">{{ $element.item_subtitle }}</p>
+        <p class="h6 my-2"><b>{{ $element.item_title }}</b></p>
+        <p><i>{{$element.timeperiod}}</i></p>
+        <p>{{ $element.item_subtitle }}</p>
         <ul>
           {{ range $index, $desc := $element.item_descriptions }}
             <li>{{ $desc | markdownify }}</li>
