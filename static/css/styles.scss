@@ -57,7 +57,12 @@ a{
   }
 }
 
-
+.not_found {
+  height: 100%;
+  width: 60%;
+  position: relative;
+  margin-left: 40%;
+}
 
 article{
   font-size: 18px !important;
@@ -255,7 +260,7 @@ section{
 
 // styles for timeline
 
-#timeline {
+.timeline {
   width: 100%;
   
   position: relative;
@@ -361,7 +366,7 @@ section{
     margin-left: 0%;
 	}
 
-	#timeline {
+	.timeline {
     margin: 30px;
     padding: 0px;
     width: 90%;

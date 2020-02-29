@@ -42,6 +42,11 @@ a:hover {
   opacity: 1;
 }
 
+.not_found {
+  height: 100%;
+  position: fixed;
+}
+
 article {
   font-size: 18px !important;
   line-height: 1.8rem;
@@ -202,7 +207,7 @@ section.pink {
   border: none;
 }
 
-#timeline {
+.timeline {
   width: 100%;
   position: relative;
   -webkit-transition: all 0.4s ease;
@@ -210,7 +215,7 @@ section.pink {
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-#timeline:before {
+.timeline:before {
   content: "";
   width: 3px;
   height: 100%;
@@ -220,18 +225,18 @@ section.pink {
   top: 0;
   position: absolute;
 }
-#timeline:after {
+.timeline:after {
   content: "";
   clear: both;
   display: table;
   width: 100%;
 }
-#timeline .timeline-item {
+.timeline .timeline-item {
   margin-bottom: 30px;
   position: relative;
   text-align: right;
 }
-#timeline .timeline-item .timeline-icon {
+.timeline .timeline-item .timeline-icon {
   background: #000;
   width: 20px;
   height: 20px;
@@ -245,7 +250,7 @@ section.pink {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#timeline .timeline-item .timeline-content {
+.timeline .timeline-item .timeline-content {
   width: 90%;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -253,19 +258,19 @@ section.pink {
   transition: all 0.3s ease;
   padding-left: 30px;
 }
-#timeline .timeline-item .timeline-content p {
+.timeline .timeline-item .timeline-content p {
   color: rgba(0, 0, 0, 0.7);
 }
-#timeline .timeline-item .timeline-content ul {
+.timeline .timeline-item .timeline-content ul {
   padding-left: 0px;
 }
-#timeline .timeline-item .timeline-content .date {
+.timeline .timeline-item .timeline-content .date {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 3px;
 }
-#timeline .timeline-item .timeline-content.right {
+.timeline .timeline-item .timeline-content.right {
   float: right;
   text-align: left;
 }
@@ -296,27 +301,27 @@ section.pink {
     margin-left: 0%;
   }
 
-  #timeline {
+  .timeline {
     margin: 30px;
     padding: 0px;
     width: 90%;
   }
-  #timeline:before {
+  .timeline:before {
     left: 0;
   }
-  #timeline .timeline-item .timeline-content {
+  .timeline .timeline-item .timeline-content {
     width: 90%;
     float: right;
     text-align: left;
   }
-  #timeline .timeline-item .timeline-content:before,
-#timeline .timeline-item .timeline-content .right:before {
+  .timeline .timeline-item .timeline-content:before,
+.timeline .timeline-item .timeline-content .right:before {
     left: 10%;
     margin-left: -6px;
     border-left: 0;
     border-right: 7px solid #ee4d4d;
   }
-  #timeline .timeline-item .timeline-icon {
+  .timeline .timeline-item .timeline-icon {
     left: 0;
   }
 }
