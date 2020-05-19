@@ -17,7 +17,7 @@
 		{{ .Scratch.Set "bg" "blue" }}
 		{{ partial "experience.html" . }}
 	{{ end }}
-	{{ if .Site.Data.services }}{{ partial "services.html" . }}{{ end }}
+	{{ if .Site.Data.projects }}{{ partial "projects.html" . }}{{ end }}
 	{{ if .Site.Data.misc }}{{ partial "misc.html" . }}{{ end }}
 </div>
 
