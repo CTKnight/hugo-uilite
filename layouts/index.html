@@ -2,16 +2,18 @@
 {{ partial "sidebar.html" . }}
 
 <div class="main-content">
-	{{ if .Site.Data.education }}
-		{{ .Scratch.Set "exp" .Site.Data.education }}
-		{{ .Scratch.Set "bg" "amber" }}
-		{{ partial "experience.html" . }}
-	{{ end }}
 	{{ if .Site.Data.experience }}
 		{{ .Scratch.Set "exp" .Site.Data.experience }}
 		{{ .Scratch.Set "bg" "orange" }}
 		{{ partial "experience.html" . }}
 	{{ end }}
+
+	{{ if .Site.Data.education }}
+		{{ .Scratch.Set "exp" .Site.Data.education }}
+		{{ .Scratch.Set "bg" "amber" }}
+		{{ partial "experience.html" . }}
+	{{ end }}
+
 	{{ if .Site.Data.research }}
 		{{ .Scratch.Set "exp" .Site.Data.research }}
 		{{ .Scratch.Set "bg" "blue" }}
